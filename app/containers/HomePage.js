@@ -7,9 +7,14 @@ type Props = {};
 export default class HomePage extends Component<Props> {
   props: Props;
 
+  getNow() {
+    return Date.now();
+  }
+
   render() {
+
     return (
-      <Home />
+      <Home start={this.getNow()}/>
     );
   }
 }
