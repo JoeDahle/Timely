@@ -1,6 +1,10 @@
 /*
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
+ *        If you want to use Sass in your app, you only need to import `.sass` files instead of `.css` once:
+ ```js
+ import './app.global.scss';
+ ```
  */
 @import "~font-awesome/css/font-awesome.css";
 
